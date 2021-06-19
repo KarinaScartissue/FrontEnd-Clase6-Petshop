@@ -6,85 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DocPetshop</title>
-    <style>
-        body {
-            padding: 0%;
-            margin: 0%;
-            font-family: Arial, Helvetica, sans-serif
-        }
-
-        .franja_negra {
-            background: #222222;
-            color: #F3F3F3
-        }
-
-        .franja_marron {
-            background: #F0A83E;
-            color: white;
-            font-size: 25px
-        }
-
-        .franja_oscura {
-            background: #3C2313;
-            color: white
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
         <section class="franja_negra">
-            <div style="padding-left:9%; padding-top: 5px; padding-bottom: 5px">Grandes ofertas en comederos</div>
-            <div style="position:absolute; top:3px; right: 5%">
-                <span style="margin-right: 20px">Español <img src="img/down.png"></span>
+            <div id="div1">Grandes ofertas en comederos</div>
+            <div id="div2">
+                <span id="span1">Español <img src="img/down.png"></span>
                 <span>ARG$ <img src="img/down.png"></span>
             </div>
         </section>
         <nav class="franja_marron">
-            <div style="padding-left:4%; padding-top: 25px; padding-bottom: 25px"><img src="img/Logo.png"></div>
-            <div style="position:absolute; top:60px; right: 2%">
-                <span style="margin-right: 40px"><img src="img/pawprint 1.png">Categorias</span>
-                <span style="margin-right: 40px"><img src="img/pawprint 1.png">Pets</span>
-                <span style="margin-right: 40px"><img src="img/pawprint 1.png">Nosotros</span>
-                <span><img src="img/pawprint 1.png">Contactanos</span>
+            <div id="div4"><img src="img/Logo.png"></div>
+            <div id="div5">
+                <span><i class="fas fa-bone"></i> Categorias</span>
+                <span><i class="fas fa-dog"></i> Pets</span>
+                <span><i class="fas fa-user-circle"></i> Nosotros</span>
+                <span><i class="fas fa-phone-alt"></i> Contactanos</span>
             </div>
         </nav>
     </header>
     <main>
-        <section style="position: relative">
-            <img src="img/banner.jpg" style="width: 100%;height: auto" width="4096" height="1636">
-            <div style="position: absolute; top:40%; right: 2%; text-align: center">
-                <div style="background: white; font-size: 55px; padding: 10px; border-radius:10px">¡Es un placer
-                    tenerte
-                    aquí!</div>
+        <section id="section1">
+            <img src="img/banner.jpg" id="banner">
+            <div id="div6">
+                <div id="div7">¡Es un placer tenerte aquí!</div>
                 <br>
-                <div style="font-size: 30px"> ¡Comederos con descuento!</div>
+                <div id=div8> ¡Comederos con descuento!</div>
                 <br>
-                <button style="background: #F0A83E; color: white; font-size: 30px; padding: 20px; border-radius:10px">
+                <button id="button1">
                     COMEDEROS </button>
             </div>
         </section>
-        <section style="text-align: center">
+        <section id="section2">
             <br>
             <img src="img/pawprint2.png">
-            <h1 style="color: #3C2313; font-size: 65px">Productos Destacados</h1>
-            <p style="color: #666666; font-size: 30px">Comederos - Accesorios - Comida</p>
+            <h1>Productos Destacados</h1>
+            <p id="p1">Comederos - Accesorios - Comida</p>
             <p>
                 <img src="img/Churrasquito.png">
                 <img src="img/Comedero.png">
                 <img src="img/Huesitojuguete.png">
             </p>
             <br>
-            <h2 style="font-size: 45px">Contáctanos</h2>
+            <h2>Contáctanos</h2>
             <br>
             <p><img src="img/Nombre.png"></p>
             <p><img src="img/Correo.png"></p>
             <p><img src="img/Telefono.png"></p>
             <br>
             <p>
-                <button style="background: #8A8787; color: white; font-size: 30px; padding: 20px; border-radius:30px; width: 200px">
+                <button id="button2">
                     Resetear </button>
-                <button style="background: #F0A83E; color: white; font-size: 30px; padding: 20px; border-radius:30px; width: 200px">
+                <button id="button3">
                     Enviar </button>
             </p>
             <br>
@@ -92,56 +70,55 @@
             <br>
             <br>
         </section>
-        <section class="franja_marron" style="position: relative">
-            <p style="font-size: 40px; font-weight: bold; padding: 30px; margin: 0%"><img src="img/enviar.png" style="vertical-align:top   ">
+        <section class="franja_marron">
+            <p id="p2"><i class="far fa-envelope"></i>
                 Suscríbete para más novedades
             </p>
-            <div style="position:absolute; right: 20px; top: 20px">
-                <span style="background: white; color:#A0A0A0; font-size: 20px; padding: 20px; width: 450px; display: inline-block; border-radius:20px">Ingresá
+            <div id="div3">
+                <span id="spanmain">Ingresá
                     tu correo electrónico</span>
-                <button style="background: #3C2310; color: white; font-size: 20px; padding: 20px; border-radius:30px; width: 200px">
+                <button id="button4">
                     Suscribirme </button>
             </div>
         </section>
     </main>
     <footer>
-        <section class="franja_oscura" style="position:relative">
+        <section class="franja_oscura">
             <br>
             <br>
-            <div style="padding-left: 5%">
-                <div><img src="img/Icono1.png" style="display: inline-block; vertical-align: top">
-                    <p style="display: inline-block; margin-top: 0% ;margin-left: 2%">
-                        <span style="font-weight: bold; font-size: 40px">Localidad</span>
+            <div id="div9">
+                <div><img src="img/Icono1.png" id="img1">
+                    <p class="footerp1">
+                        <span class="footerspan1">Localidad</span>
                         <br>
-                        <span style="font-size: 20px; color: #8A8787">Calle - Provincia</span>
+                        <span class="footerspan2">Calle - Provincia</span>
                     </p>
                     <br>
                     <br>
                 </div>
-                <img src="img/Icono2.png" style="display: inline-block; vertical-align: top">
-                <p style="display: inline-block; margin-top: 0% ;margin-left: 2%">
-                    <span style="font-weight: bold; font-size: 40px">Teléfono</span>
+                <img src="img/Icono2.png" class="imgfooter">
+                <p class="footerp1">
+                    <span class="footerspan1">Teléfono</span>
                     <br>
-                    <span style="font-size: 20px; color: #8A8787">Numero de teléfono</span>
+                    <span class="footerspan2">Numero de teléfono</span>
                 </p>
                 <br>
                 <br>
-                <img src="img/Icono3.png" style="display: inline-block; vertical-align: top">
-                <p style="display: inline-block; margin-top: 0% ;margin-left: 2%">
-                    <span style="font-weight: bold; font-size: 40px">Correo Electrónico</span>
+                <img src="img/Icono3.png" class="imgfooter">
+                <p class="footerp1">
+                    <span class="footerspan1">Correo Electrónico</span>
                     <br>
-                    <span style="font-size: 20px; color: #8A8787">Dirección de correo</span>
+                    <span class="footerspan2">Dirección de correo</span>
                 </p>
                 <br>
             </div>
-            <div style="position: absolute; top:50%; right: 5%; text-align: center"><img src="img/Logo2.png"></div>
+            <div id="div10"><img src="img/Logo2.png"></div>
             <br>
             <br>
         </section>
 
         <section class="franja_negra">
-            <p style="text-align: center; font-size: 20px; margin:0%; padding: 5px">Todos los derechos reservados Front
-                End</p>
+            <p id="footerp2">Todos los derechos reservados Front End</p>
         </section>
     </footer>
 </body>
