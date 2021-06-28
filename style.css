@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 *{
     font-family: 'Roboto', sans-serif;
 }
@@ -7,51 +7,38 @@ body {
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif
 }
-.franja_negra {
+header section {
     background: #222222;
-    color: #F3F3F3
+    color: #F3F3F3;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 5px 60px 5px 90px;
 }
-
-.franja_marron {
+header ul { 
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    grid-column-gap: 15px;
+    margin: 0%;
+    align-items: center;
+}
+nav {
+    padding: 25px;
     background: #F0A83E;
     color: white;
     font-size: 25px;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center
 }
-
-.franja_oscura {
-    position: relative;
-    background: #3C2313;
-    color: white
-}
-#div1{
-    padding-left:9%; 
-    padding-top: 5px; 
-    padding-bottom: 5px
-}
-#div2{
-    position:absolute; 
-    top:3px; 
-    right: 5%
-}
-#span1{
-    margin-right: 20px
-}
-#div4 {
-    padding-left:4%; 
-    padding-top: 25px; 
-    padding-bottom: 25px
-}
-#div5 {
-    position:absolute; 
-    top:35px; 
-    right: 2%
-}
-nav span {
-    margin-right: 40px
-}
-.section1 {
-position: relative
+#secbanner {
+    position: relative
 }
 #banner {
     width: 100%;
@@ -59,19 +46,19 @@ position: relative
     width: 4096;
     height: 1636;
 }
-#div6 {   
+#divbanner6 {   
     position: absolute; 
     top:35%; 
     right: 2%; 
     text-align: center
 }
-#div7 {
+#divbanner7 {
     background: white; 
     font-size: 55px; 
     padding: 10px; 
     border-radius:10px
 }
-#div8 {
+#divbanner8 {
     font-size: 30px;
 }
 #button1 {
@@ -81,7 +68,7 @@ position: relative
     padding: 20px; 
     border-radius:10px
 }
-#section2 {
+#secdestacados {
     text-align: center
 }
 h1 {
@@ -89,11 +76,55 @@ h1 {
     font-size: 65px;
     font-weight: bold
 }
-#p1 {
+main ul {
     color: #666666; 
-    font-size: 30px
+    font-size: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    grid-column-gap: 15px;
+    margin: 0%;
+    align-items: center;
+    justify-content: center
 }
-#p2 {
+#container {
+    font-weight: 500;
+    font-size: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    grid-column-gap: 15px;
+    margin: 0%;
+    align-items: center;
+    justify-content: center
+}
+.desc {color: #3C2313}
+.precio {color: #F0A83E}
+#suscribe {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    background: #F0A83E;
+    color: white;
+    font-size: 25px;
+    align-items: center
+}
+#contact {
+    position: relative;
+    background: #3C2313;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 2% 5%;
+}
+#psuscribe {
     font-size: 40px; 
     font-weight: bold; 
     padding: 30px; 
@@ -118,15 +149,7 @@ h2 {
     border-radius:30px; 
     width: 200px
 }
-#div9 {
-    padding-left: 5%
-}
-#div3 {
-    position:absolute; 
-    right: 20px; 
-    top: 20px;
-}
-#spanmain {
+#spansuscribe {
     background: white; 
     color:#A0A0A0; 
     font-size: 20px; 
@@ -143,36 +166,31 @@ h2 {
     border-radius:30px; 
     width: 200px
 }
-#img1 {
-    display: inline-block; 
-    vertical-align: top
-}
+
 #footerp1 {
     margin-top: 0% ;
     margin-left: 2%;
     display: inline-block;
 }
-.footerspan1 {
+.infospan1 {
     font-weight: bold; 
     font-size: 40px
 }
-.footerspan2 {
+.infospan2 {
     font-size: 20px; 
     color: #8A8787
 }
-.imgfooter {
+.imginfo {
     display: inline-block; 
     vertical-align: top
 }
-#div10 {
-    position: absolute; 
-    top:50%; 
-    right: 5%; 
-    text-align: center
-}
-#footerp2 {
+
+footer {
     text-align: center; 
     font-size: 20px; 
     margin:0%; 
-    padding: 5px
+    padding: 2px;
+    background: #222222;
+    color: #F3F3F3;
+    position: relative;
 }
