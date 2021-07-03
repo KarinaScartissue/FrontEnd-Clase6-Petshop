@@ -5,7 +5,6 @@
 body {
     padding: 0%;
     margin: 0%;
-    font-family: Arial, Helvetica, sans-serif
 }
 header section {
     background: #222222;
@@ -166,7 +165,6 @@ h2 {
     border-radius:30px; 
     width: 200px
 }
-
 #footerp1 {
     margin-top: 0% ;
     margin-left: 2%;
@@ -179,10 +177,6 @@ h2 {
 .infospan2 {
     font-size: 20px; 
     color: #8A8787
-}
-.imginfo {
-    display: inline-block; 
-    vertical-align: top
 }
 
 footer {
