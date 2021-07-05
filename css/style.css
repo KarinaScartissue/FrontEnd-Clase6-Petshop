@@ -37,7 +37,10 @@ nav {
     align-content: center
 }
 #secbanner {
-    position: relative
+    position: relative;
+    height: 950px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover
 }
 #banner {
     width: 100%;
@@ -92,7 +95,7 @@ main ul {
     font-size: 30px;
     list-style-type: none;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-content: space-around;
     grid-column-gap: 15px;
     margin: 0%;
@@ -101,10 +104,20 @@ main ul {
 }
 .desc {color: #3C2313}
 .precio {color: #F0A83E}
+.input {
+    background-color: #3C2313;
+    color: #AB9C9C;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 15px;
+    font-size: 20px
+}
 #suscribe {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     background: #F0A83E;
@@ -112,17 +125,7 @@ main ul {
     font-size: 25px;
     align-items: center
 }
-#contact {
-    position: relative;
-    background: #3C2313;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    padding: 2% 5%;
-}
+
 #psuscribe {
     font-size: 40px; 
     font-weight: bold; 
@@ -170,6 +173,23 @@ h2 {
     margin-left: 2%;
     display: inline-block;
 }
+#contact {
+    position: relative;
+    background: #3C2313;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 20px
+}
+.contact-item {
+    display:flex;
+    flex-direction: row;
+
+}
 .infospan1 {
     font-weight: bold; 
     font-size: 40px
@@ -187,4 +207,22 @@ footer {
     background: #222222;
     color: #F3F3F3;
     position: relative;
+}
+@media (max-width: 1120px) {
+    header section {
+        display: none
+    }
+    header nav ul {
+        display: none
+    }
+    #contact {
+
+        justify-content: space-around;
+
+    }
+}
+@media (min-width: 1121px) {
+    #menu-icon {
+        display:none
+    }
 }
